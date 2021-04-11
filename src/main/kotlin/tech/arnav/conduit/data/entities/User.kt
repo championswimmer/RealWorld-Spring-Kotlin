@@ -6,7 +6,7 @@ import javax.persistence.Entity
 
 @Entity(name = "users")
 data class User(
-    @Column(unique = true)
+    @Column(unique = true, nullable = false)
     val username: String,
     val email: String,
     val bio: String,

@@ -2,7 +2,7 @@ spring:
   jpa:
     generate-ddl: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: create # TODO: turn to 'update' on prod
     show-sql: true # TODO: disable on prod
   datasource:
     driver-class-name: org.postgresql.Driver
