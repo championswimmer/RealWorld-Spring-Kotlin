@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+    show-sql: true # TODO: disable on prod
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: spring_conduit
+    password: spring_conduit
+    url: jdbc:postgresql://localhost:5432/spring_conduit
+server:
+  port: 3210
